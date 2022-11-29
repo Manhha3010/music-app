@@ -7,6 +7,7 @@ import {
 } from "react-native";
 import { styles } from "./styles";
 import { LinearGradient } from "expo-linear-gradient";
+import { colors } from "../../const/color";
 
 const ButtonSmall = (props) => {
   return (

@@ -1,5 +1,6 @@
 import { StyleSheet } from "react-native";
 import { Dimensions } from "react-native";
+import { colors } from "../../const/color";
 
 const windowWidth = Dimensions.get("window").width;
 export const styles = StyleSheet.create({
@@ -51,7 +52,7 @@ export const styles = StyleSheet.create({
     borderColor: "#fff",
     borderWidth: 1,
     borderRadius: 22,
-    backgroundColor: "#A5CFFF",
+    backgroundColor: colors.input,
     marginVertical: 16,
   },
   textInputForgot: {
@@ -82,10 +83,10 @@ export const styles = StyleSheet.create({
     alignItems: "center",
   },
   fingerText: {
-    color: "#0085FF",
+    color: colors.primary,
   },
   signUpText: {
-    color: "#0085FF",
+    color: colors.primary,
     fontWeight: "700",
   },
   centeredView: {

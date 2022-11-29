@@ -4,6 +4,8 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import LoginScreen from "../container/LoginScreen";
 import WelCome from "../container/WelcomeScreen/Welcome";
 import SignUpScreen from "../container/SignUpScreen";
+import HomeScreen from "../container/HomeScreen";
+import { MyTabs } from "./HomeNavigator";
 
 const Stack = createNativeStackNavigator();
 const StackNavigator = () => {
@@ -22,6 +24,24 @@ const StackNavigator = () => {
       <Stack.Screen
         name="SignUpScreen"
         component={SignUpScreen}
+        options={{
+          headerTransparent: true,
+          headerBackVisible: false,
+          headerTitle: "",
+        }}
+      />
+      <Stack.Screen
+        name="HomeScreen"
+        component={HomeScreen}
+        options={{
+          headerTransparent: true,
+          headerBackVisible: false,
+          headerTitle: "",
+        }}
+      />
+      <Stack.Screen
+        name="Tabs"
+        component={MyTabs}
         options={{
           headerTransparent: true,
           headerBackVisible: false,

@@ -7,13 +7,14 @@ import {
 } from "react-native";
 import { styles } from "./styles";
 import { LinearGradient } from "expo-linear-gradient";
+import { colors } from "../../const/color";
 
 const ButtonBig = (props) => {
   return (
     <LinearGradient
       cstart={{ x: 0, y: 0 }}
       end={{ x: 1, y: 0 }}
-      colors={["#4c669f", "#3b5998"]}
+      colors={[colors.input, colors.primary]}
       style={styles.buttonContainer}
     >
       <Text style={styles.btnText}>{props.text}</Text>

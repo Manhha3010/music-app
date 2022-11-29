@@ -20,6 +20,7 @@ import ButtonSmall from "../../components/ButtonSmall/ButtonSmall";
 import OTPTextInput from "react-native-otp-textinput";
 import OTPInputView from "@twotalltotems/react-native-otp-input";
 import { useNavigation } from "@react-navigation/native";
+import { colors } from "../../const/color";
 
 function LoginScreen() {
   const [email, setEmail] = useState("");
@@ -198,7 +199,7 @@ function LoginScreen() {
                   }}
                 /> */}
                 <TouchableOpacity>
-                  <Text style={{ color: "#0062D5", marginBottom: 10 }}>
+                  <Text style={{ color: colors.primary, marginBottom: 10 }}>
                     Gửi lại mã
                   </Text>
                 </TouchableOpacity>
@@ -365,7 +366,7 @@ function LoginScreen() {
   }
   return (
     <LinearGradient
-      colors={["#0085FF", "#fff"]}
+      colors={[colors.primary, "#fff"]}
       start={{ x: 0.26, y: 0.26 }}
       end={{ x: 0, y: 1.0 }}
       location={[0.25, 0.4]}
@@ -431,7 +432,7 @@ function LoginScreen() {
             </TouchableOpacity>
           </View>
           <View style={styles.buttonContainer}>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.replace("Tabs")}>
               <ButtonBig text={"Đăng nhập"} />
             </TouchableOpacity>
             <View style={{ paddingVertical: 20 }}>
